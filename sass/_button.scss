@@ -1,0 +1,25 @@
+button {
+  border: none;
+  outline: none;
+}
+
+.btn {
+  position: relative;
+  padding: 0 18px;
+  display: inline-block;
+  min-height: 45px;
+  line-height: 1;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  vertical-align: top;
+  cursor: pointer;
+  outline: none;
+  // text-transform: uppercase;  Uncomment if you want uppercase button :D
+  border: none;
+
+
+  &:active {
+    opacity: 0.85;
+  }
+}

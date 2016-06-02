@@ -1,0 +1,66 @@
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+.fit-parent {
+  width: 100% !important;
+  box-sizing: border-box; }
+.fit-parent-max {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.bottom{position: absolute !important;bottom: 0 !important; left: 0 !important; right: 0 !important;z-index: 2}
+.top{position: absolute;bottom: 0 !important; left: 0 !important; right: 0 !important;z-index: 2}
+
+// text colors
+.text-inverse { @include fontcolor($inverse-color);}
+.text-default { @include fontcolor($default-color);}
+.text-success { @include fontcolor($success-color);}
+.text-info { @include fontcolor($info-color);}
+.text-warning { @include fontcolor($warning-color);}
+.text-primary { @include fontcolor($primary-color);}
+.text-danger { @include fontcolor($danger-color);}
+
+.padding{
+  padding: 10px;
+}
+
+.padding-h{
+  padding: 0 10px 10px 0;
+}
+
+.padding-v{
+  padding: 10px 0 0 10px;
+}
+
+.marge{
+  margin-top: 10px;
+}
+
+.inverse { @include backcolor( $inverse-color);}
+.default { @include backcolor($default-color);}
+.success { @include backcolor($success-color);}
+.info { @include backcolor($info-color);}
+.warning { @include backcolor($warning-color);}
+.primary { @include backcolor($primary-color);}
+.danger { @include backcolor($danger-color);}
+.sm {min-height: 40px;}
+.large{min-height: 60px;}
+
+.rounded{@include border-radius($radius);}

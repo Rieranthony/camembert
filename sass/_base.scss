@@ -1,0 +1,65 @@
+// Write with love by Anthony Riera in France
+
+//primary > Greenblue
+$primary-color: #1abc9c;
+$primary-color-d: #16a085;
+
+//success > Green
+$success-color: #2ecc71;
+$success-color-d: #27ae60;
+
+//Danger > Red
+$danger-color: #e74c3c;
+$danger-color-d: #c0392b;
+
+//default >  grey
+$default-color: #ecf0f1;
+$default-color-d: #bdc3c7;
+
+//inverse > Dark blue
+$inverse-color: #34495e;
+$inverse-color-d: #2c3e50;
+
+//warning > Yellow
+$warning-color: #f1c40f;
+$warning-color-d: #f39c12;
+
+//info > blue
+$info-color:#3498db;
+$info-color-d:#2980b9;
+
+//font
+$font: "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+$f-size: 0.88em;
+
+//Radius value
+$radius : 4px;
+
+//put background color to something
+@mixin backcolor($color) {
+  background-color: $color !important;
+}
+
+//put background color to something
+@mixin fontcolor($color) {
+  color: $color;
+}
+
+// border radius mixin
+@mixin border-radius($data) {
+  border-radius: $data;
+  -webkit-border-radius: $data;
+  -moz-border-radius: $data;
+  -ms-border-radius: $data;
+  -o-border-radius: $data;
+}
+
+// We clean everythings with normalise
+@import 'reset';
+
+//We insert our function
+@import 'body';
+@import 'utilities';
+@import 'button';
+@import 'forms';
+@import 'animate';
