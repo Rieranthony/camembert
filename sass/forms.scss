@@ -73,38 +73,66 @@ label {
   height: 52px;
   line-height: 52px;
 }
-.checkbox input[type="checkbox"],
-.radio input[type="radio"] {
-  display: none;
+
+.tgl{
+	display: none;
+	// add default box-sizing for this scope
+	&, &:after, &:before,
+	& *, & *:after, & *:before,
+	& + .tgl-btn{
+		box-sizing: border-box;
+		&::selection{
+			background: none;
+		}
+	}
+	+ .tgl-btn {
+		outline: 0;
+		display: block;
+		width: 4em;
+		height: 2.2em;
+		position: relative;
+		cursor: pointer;
+     user-select: none;
+     margin-top: 10px;
+		&:after, &:before{
+			position: relative;
+			display: block;
+			content: "";
+			width: 50%;
+			height: 100%;
+		}
+		&:after{
+			left: 0;
+		}
+		&:before{
+			display: none;
+		}
+	}
+	&:checked{
+		+ .tgl-btn{
+			&:after{
+				left: 50%;
+			}
+		}
+	}
 }
-.checkbox,
-.radio {
-  position: relative;
-}
-.checkbox span,
-.radio span {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  content: "";
-  position: absolute;
-  float: right;
-  top: 16px;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid $default-color-d;
-}
-.checkbox :checked + span,
-.radio :checked + span {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  border-radius: 0;
-  height: 0.65rem;
-  border-color: $inverse-color;
-  border-top-style: none;
-  border-right-style: none;
-}
-.radio span {
-  border-radius: 50%;
+
+// themes
+.tgl-light{
+	+ .tgl-btn{
+		background: #f0f0f0;
+		border-radius: 2em;
+		padding: 2px;
+		transition: all .4s ease;
+		&:after{
+			border-radius: 50%;
+			background: #fff;
+			transition: all .2s ease;
+		}
+	}
+	&:checked{
+		+ .tgl-btn{
+			background: $inverse-color;
+		}
+	}
 }
