@@ -54,7 +54,7 @@
 }
 
 .inverse { @include backcolor( $inverse-color);}
-.default { @include backcolor($default-color);}
+.default { @include backcolor($default-color);color: #444 !important}
 .success { @include backcolor($success-color);}
 .info { @include backcolor($info-color);}
 .warning { @include backcolor($warning-color);}

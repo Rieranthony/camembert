@@ -3,7 +3,7 @@
 Camembert is a tiny css framework wrote with sass for help cordova devlopper to begin the app devlopement with a solid css bases.
 
 Camembert give you yet :
-  - All basics for native feelings app 
+  - All basics for native feelings app
   - Flat color design
   - Button
   - List
@@ -40,3 +40,127 @@ Simple cordova exemple:
 </body>
 </html>
 ```
+# Button
+![alt text](http://img15.hostingpics.net/pics/815537button.jpg "Button")
+```sh
+      <button class="btn inverse fit-parent rounded">btn inverse fit-parent rounded</button>
+      <button class="btn warning marge">btn warning marge</button>
+      <button class="btn success marge">btn success marge</button>
+      <button class="btn default marge">btn default marge</button>
+      <button class="btn info marge">btn info marge</button>
+      <button class="btn danger marge sm">btn danger marge sm</button>
+      <button class="btn primary marge large">btn primary marge large</button>
+```
+`.rounded` for rounded btn
+
+`.large` for larger btn
+
+`.sm` for smaller btn
+
+`.fit-parent` for 100% width btn
+
+# List & Toogle button
+![alt text](http://img15.hostingpics.net/pics/133473list.jpg "Button")
+```sh
+    <ul class="list">
+        <li class="divider">List title</li>
+        <li class="padded-list">
+          <label>
+            Localisation service
+            <div class="pull-right">
+              <input class='tgl tgl-light' type='checkbox'>
+              <span class='tgl-btn'></span>
+            </div>
+          </label>
+        </li>
+        <li class="padded-list">
+          <label>
+            Toggle checked
+            <div class="pull-right">
+              <input class='tgl tgl-light' type='checkbox' checked>
+              <span class='tgl-btn'></span>
+            </div>
+          </label>
+        </li>
+        <li class="padded-list">
+          <label>
+            Female
+            <div class="pull-right">
+              <input class='tgl tgl-light' type='radio' name='test'>
+              <span class='tgl-btn'></span>
+            </div>
+          </label>
+        </li>
+        <li class="padded-list">
+          <label>
+            Male
+            <div class="pull-right">
+              <input class='tgl tgl-light' type='radio' name='test' checked>
+              <span class='tgl-btn'></span>
+            </div>
+          </label>
+        </li>
+        <li>
+          I agree with all terms
+          <button class="btn warning pull-right rounded sm">Button</button>
+        </li>
+    </ul>
+```
+
+# Form
+
+![alt text](http://img15.hostingpics.net/pics/398557form.jpg "Button")
+```sh
+      <h3 class="text-center">My awesome app</h3>
+      <form>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <ul class="list">
+        <li class="padded-list">
+          <label>
+            Remember me
+            <div class="pull-right">
+              <input class='tgl tgl-light' type='checkbox' checked>
+              <span class='tgl-btn'></span>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <button class="btn fit-parent inverse">Sign in</button>
+    </form>
+```
+# Utilities
+
+`.text-left` for left text alignment
+
+`.text-right` for right text alignment
+
+`.text-center` for center text alignment
+
+`.text-justify` for justify text alignment
+
+`.pull-left` and `.pull-right` for align somethings
+
+`.bottom` and `.top` for put somethings in top or bottom of the app
+
+`.padding` for 10px padding
+
+`.padding-v` for vertical 1Opx padding
+
+`.padding-h` for horizontal 1Opx padding
+
+`.marge` for top 1Opx marging
+
+`.rounded` for put border-radius to somethings (default 4px)
+
+For text color
+```sh
+.text-inverse
+.text-default
+.text-success
+.text-info
+.text-warning
+.text-primary
+.text-danger
+```
+##### Made with love by Anthony Riera in Marseille (France)

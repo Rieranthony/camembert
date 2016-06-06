@@ -382,7 +382,8 @@ a {
   background-color: #34495e !important; }
 
 .default {
-  background-color: #ecf0f1 !important; }
+  background-color: #ecf0f1 !important;
+  color: #444 !important; }
 
 .success {
   background-color: #2ecc71 !important; }
@@ -509,6 +510,7 @@ input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-size: 16px;
   color: #34495e;
   background-color: #fff;
   border: none;
