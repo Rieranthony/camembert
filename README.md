@@ -145,11 +145,11 @@ Simple cordova exemple:
 
 `.padding` for 10px padding
 
-`.padding-v` for vertical 1Opx padding
+`.padding-v` for vertical 10px padding
 
-`.padding-h` for horizontal 1Opx padding
+`.padding-h` for horizontal 10px padding
 
-`.marge` for top 1Opx marging
+`.marge` for top 10px marging
 
 `.rounded` for put border-radius to somethings (default 4px)
 
