@@ -60,7 +60,7 @@
 .warning { @include backcolor($warning-color);}
 .primary { @include backcolor($primary-color);}
 .danger { @include backcolor($danger-color);}
-.sm {min-height: 40px;}
-.large{min-height: 60px;}
+.sm {min-height: 40px !important;}
+.large{min-height: 60px !important;}
 
 .rounded{@include border-radius($radius);}

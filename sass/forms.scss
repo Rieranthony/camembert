@@ -68,6 +68,7 @@ label {
   display: inline-block;
   height: 48px;
   line-height: 48px;
+  font-size: 14px;
 }
 .list label {
   height: 52px;
@@ -93,7 +94,7 @@ label {
 		position: relative;
 		cursor: pointer;
      user-select: none;
-     margin-top: 10px;
+     margin-top: 12px;
 		&:after, &:before{
 			position: relative;
 			display: block;

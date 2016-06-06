@@ -2,6 +2,7 @@
 html {
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  box-sizing: border-box;
 }
 body {
   top: 0;
@@ -82,7 +83,7 @@ p {
   left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  ;z-index: 1
+  z-index: 1;
 }
 .content > * {
   -webkit-transform: translateZ(0);

@@ -186,7 +186,8 @@ textarea {
 
 html {
   -ms-touch-action: pan-y;
-  touch-action: pan-y; }
+  touch-action: pan-y;
+  box-sizing: border-box; }
 
 body {
   top: 0;
@@ -399,10 +400,10 @@ a {
   background-color: #e74c3c !important; }
 
 .sm {
-  min-height: 40px; }
+  min-height: 40px !important; }
 
 .large {
-  min-height: 60px; }
+  min-height: 60px !important; }
 
 .rounded {
   border-radius: 4px;
@@ -430,6 +431,56 @@ button {
   border: none; }
   .btn:active {
     opacity: 0.85; }
+
+.list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  word-wrap: break-word; }
+
+.list li {
+  height: auto;
+  min-height: 51px;
+  line-height: 52px;
+  display: block;
+  border-bottom: 1px solid #eee;
+  margin-left: 15px;
+  word-wrap: break-word; }
+
+.list li:first-child {
+  margin-left: 0px;
+  border-bottom: 0px; }
+
+.list li:last-child {
+  border-bottom: 0px; }
+
+.list li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #000;
+  -webkit-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  box-sizing: border-box; }
+
+.list li a:active {
+  background-color: #eee; }
+
+.list .divider {
+  height: 48px;
+  line-height: 48px;
+  font-size: 16px;
+  background-color: #f5f5f5; }
+
+.list .divider,
+.list .padded-list {
+  padding: 0 16px; }
+
+.list .btn {
+  margin: 6px 6px 6px 6px; }
 
 input[type="submit"],
 input[type="reset"],
@@ -500,7 +551,8 @@ label {
   width: 100%;
   display: inline-block;
   height: 48px;
-  line-height: 48px; }
+  line-height: 48px;
+  font-size: 14px; }
 
 .list label {
   height: 52px;
@@ -520,7 +572,7 @@ label {
     position: relative;
     cursor: pointer;
     user-select: none;
-    margin-top: 10px; }
+    margin-top: 12px; }
     .tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
       position: relative;
       display: block;
