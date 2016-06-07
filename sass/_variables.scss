@@ -33,6 +33,9 @@ $f-size: 0.88em;
 //Radius value
 $radius : 4px;
 
+//Radius value
+$navbar-height : 44px;
+
 //put background color to something
 @mixin backcolor($color) {
   background-color: $color !important;

@@ -107,27 +107,39 @@ Simple cordova exemple:
     </ul>
 ```
 
-# Form
+# Form & Headerbar & Icon btn
 
-![alt text](http://img15.hostingpics.net/pics/398557form.jpg "Button")
+![alt text](http://img11.hostingpics.net/pics/312409Sanstitre.png "Button")
 ```sh
-      <h3 class="text-center">My awesome app</h3>
-      <form>
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <ul class="list">
-        <li class="padded-list">
-          <label>
-            Remember me
-            <div class="pull-right">
-              <input class='tgl tgl-light' type='checkbox' checked>
-              <span class='tgl-btn'></span>
-            </div>
-          </label>
-        </li>
-      </ul>
-      <button class="btn fit-parent inverse">Sign in</button>
-    </form>
+<header class="header-bar">
+  <a class="btn pull-left icon icon-arrow-left"></a>
+    <div class="center">
+      <h1 class="title">Sign in</h1>
+    </div>
+    <a class="btn pull-right">Login</a>
+</header>
+<div class="content padding has-header">
+    <form>
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+    <select>
+      <option value="Homme">Homme</option>
+      <option value="Femme">Femme</option>
+    </select>
+    <ul class="list">
+      <li class="padded-list">
+        <label>
+          Remember me
+          <div class="pull-right">
+            <input class='tgl tgl-light' type='checkbox' checked>
+            <span class='tgl-btn'></span>
+          </div>
+        </label>
+      </li>
+    </ul>
+    <button class="btn fit-parent inverse">Eat some cheeze</button>
+  </form>
+</div>
 ```
 # Utilities
 

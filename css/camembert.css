@@ -614,7 +614,7 @@ label {
   left: 0;
   z-index: 20;
   width: 100%;
-  height: 52px;
+  height: 44px;
   overflow: hidden;
   background-color: #34495e;
   -webkit-backface-visibility: hidden;
@@ -634,11 +634,11 @@ label {
   padding-right: 16px; }
 
 .header-bar .title {
-  z-index: 21;
+  z-index: 10;
   font-size: 20px;
   color: #fff;
-  height: 52px;
-  line-height: 52px; }
+  height: 44px;
+  line-height: 44px; }
 
 .header-bar .center .title {
   margin: 0 auto; }
@@ -661,8 +661,8 @@ label {
   position: relative;
   z-index: 22;
   padding: 0 12px;
-  height: 52px;
-  line-height: 52px;
+  height: 44px;
+  line-height: 44px;
   color: #fff;
   background-color: transparent;
   border: none;
@@ -674,7 +674,7 @@ label {
   background-color: rgba(0, 0, 0, 0.1); }
 
 .has-header {
-  top: 52px; }
+  top: 44px; }
 
 @-webkit-keyframes fadeIn {
   from {
